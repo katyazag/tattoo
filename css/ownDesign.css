@@ -1,0 +1,413 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+
+  font-size: 28px;
+  line-height: 62px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.order {
+  margin-bottom: 100px;
+}
+
+.order h2 {
+  margin-bottom: 39px;
+}
+
+.container {
+  width: 1204px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+a {
+  font: inherit;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-header-logo {
+  order: 1;
+  width: 308px;
+  padding-right: 22px;
+  margin-right: 24px;
+  height: 37px;
+}
+
+.site-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  list-style: none;
+
+  background-color: #ffffff;
+
+  display: flex;
+  flex-wrap: wrap;
+  order: 2;
+  width: 330px;
+  justify-content: space-between;
+  margin-right: 260px;
+}
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #32c5ff;
+}
+
+.site-navigation .open:hover,
+.site-navigation .open:focus {
+  border-bottom-color: #32c5ff;
+}
+
+.login-link-basket:hover #basket {
+  stroke: #32c5ff;
+}
+
+.login-link-enter:hover #login {
+  stroke: #32c5ff;
+}
+
+.site-navigation-current {
+  position: relative;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: #ffffff;
+}
+
+.site-navigation-current::after {
+  content: '';
+
+  position: absolute;
+  right: 2opx;
+  bottom: 0;
+  left: 20px;
+
+  height: 5px;
+  background-color: #000000;
+}
+
+.site-navigation .open {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000000;
+}
+
+.site-language {
+  display: flex;
+  flex-wrap: wrap;
+  order: 3;
+  width: 94px;
+  justify-content: flex-end;
+  padding: 0px;
+  margin-right: 24px;
+}
+
+.site-language .en {
+  margin-right: 14px;
+}
+
+.user-navigation {
+  display: flex;
+  order: 4;
+  width: 94px;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 0px;
+}
+
+.user-navigation .login-link-enter {
+  margin-right: 29px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 42px;
+  margin: 0;
+
+  font: inherit;
+  font-size: 16px;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+
+  background-color: #ffffff;
+  border: 1px solid #979797;
+}
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: black;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.main-footer>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social a {
+  color: #ffffff;
+}
+
+.social-button {
+  display: flex;
+}
+
+.social-button svg {
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 57px;
+}
+
+.benefits ul {
+  width: 566px;
+  padding-left: 50px;
+  margin: 0;
+}
+
+.benefits li {
+  margin-bottom: 37px;
+}
+
+.information p,
+.order p {
+  text-align: center;
+  width: 856px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.contacts {
+  display: block;
+  margin: auto;
+  margin-bottom: 117px;
+
+  width: 175px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #979797;
+  padding: 15px;
+}
+
+.copyrighted {
+  display: flex;
+  align-items: center;
+}
+
+.copyrighted img {
+  padding-right: 5px;
+}
+
+.copyrighted>p {
+  margin: 0;
+}
+
+/* --- Сеточные стили --- */
+
+.main-navigation {
+  display: flex;
+  align-items: baseline;
+  margin: 60px auto 90px auto;
+
+  background-color: #ffffff;
+}
+
+/* Всплывающая форма */
+
+.modal {
+  z-index: 2;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(109, 114, 120, 0.5);
+  z-index: 1;
+
+  display: none;
+}
+
+.modal-login {
+  position: fixed;
+  top: 150px;
+  left: 57%;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+  width: 360px;
+  padding: 60px 40px 50px 40px;
+  background-color: #ffffff;
+
+  display: none;
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+.login-form>p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  box-sizing: border-box;
+  padding: 12px 14px;
+  width: 100%;
+
+  line-height: 18px;
+  font-size: 16px;
+
+  background-color: transparent;
+  border: 1px solid #979797;
+}
+
+.login-form input[type='text'],
+.login-form input[type='password'] {
+  font: inherit;
+  color: #000000;
+}
+
+.login-form input::placeholder {
+  color: #dddcd9;
+}
+
+.login-form .button {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+
+  line-height: 18px;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.login-form .button .disabled {
+  color: #ffffff;
+  background-color: #dddcd9;
+  cursor: default;
+}
+
+/* .button .disabled,
+.button:disabled {
+  color: #ffffff;
+  background-color: #dddcd9;
+  cursor: default;
+} */
+
+.login-form input:focus {
+  border-color: black;
+}
+
+.modal-help {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.modal-close {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 14px;
+  left: 400px;
+
+  font-size: 0;
+
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: '';
+
+  position: absolute;
+  left: -17%;
+
+  width: 33px;
+  height: 1px;
+
+  background-color: #979797;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}

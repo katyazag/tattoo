@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Закрыть</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="tattoo-index" transform="translate(-1214.000000, -175.000000)" stroke="#979797">
+            <g id="Вход">
+                <g id="Закрыть" transform="translate(1214.000000, 175.000000)">
+                    <line x1="0.5" y1="0.5" x2="23.5" y2="23.5" id="Line"></line>
+                    <line x1="0.5" y1="0.5" x2="23.5" y2="23.5" id="Line" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) "></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

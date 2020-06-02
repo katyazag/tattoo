@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="CSS/catalog.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation container">
+      <a class="main-header-logo" href="index.html">
+        <img src="logo/index-logo.svg" width="308" height="37" alt="Логотип" />
+      </a>
+      <ul class="site-navigation">
+        <li><a class="open" href="catalog.html">Каталог</a></li>
+        <li><a href="ownDesign.html">Свой дизайн</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+
+      <div class="site-language">
+        <span class="en">EN</span>
+        <span class="ru"><b>RU</b></span>
+      </div>
+
+      <div class="user-navigation">
+        <a class="login-link-enter" href="login.html">
+          <span class="visually-hidden">Вход</span>
+          <svg width="19px" height="21px" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="tattoo-index" transform="translate(-1227.000000, -76.000000)" stroke="#000000">
+                <g id="login" transform="translate(1227.000000, 76.000000)">
+                  <ellipse id="Oval" cx="9.27" cy="5.44" rx="4.49" ry="4.94"></ellipse>
+                  <path
+                    d="M6.49,13.11 L12.05,13.11 C15.3637085,13.11 18.05,15.7962915 18.05,19.11 L18.05,20 L0.5,20 L0.5,19.1 C0.505505261,15.7940974 3.18409739,13.1155053 6.49,13.11 L6.49,13.11 Z"
+                    id="Path"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+        <a class="login-link-basket" href="basket.html">
+          <span class="visually-hidden">Корзина</span>
+          <svg width="24px" height="21px" viewBox="0 0 24 21" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="tattoo-index" transform="translate(-1275.000000, -76.000000)" stroke="#000000">
+                <g id="basket" transform="translate(1275.000000, 76.000000)">
+                  <polygon id="Path" points="7.4 15.5 19.89 15.5 22.89 6.15 5.4 6.15"></polygon>
+                  <polyline id="Path" points="0 0.5 4.19 0.5 7.4 15.5"></polyline>
+                  <circle id="Oval" cx="8.91" cy="18.37" r="1.42"></circle>
+                  <circle id="Oval" cx="18.7" cy="18.37" r="1.42"></circle>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="visually-hidden">Каталог</h1>
+
+    <div class="filters-breadcrumbs-wrapper">
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs-current">Каталог</li>
+      </ul>
+
+      <!-- <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <label class="visually-hidden" for="categories">Категории:</label>
+  
+        <select id="categories">
+          <option value="sorting">Сортировка по категориям</option>
+          <option value="watercolor-tattoo">Акварельные тату</option>
+          <option value="white-tattoo">Белые тату</option>
+          <option value="black-tattoo">Черные тату</option>
+          <option value="child-tattoo">Детские тату</option>
+        </select>
+      </section> -->
+
+      <div class="filters dropdown">
+        <button class="dropbtn">Сортировка по категориям</button>
+        <div class="arrow-down"></div>
+
+        <div class="dropdown-content">
+          <a value="watercolor-tattoo" href="#">Акварельные тату</a>
+          <a value="white-tattoo" href="#">Белые тату</a>
+          <a value="black-tattoo" href="#">Черные тату</a>
+          <a value="child-tattoo" href="#">Детские тату</a>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="catalog">
+      <h2 class="visually-hidden"> Каталог товаров</h2>
+      <ul class="catalog-list">
+
+        <li class="catalog-item">
+          <a href="catalog-item.html">
+            <img src="img/package_1.jpg" width="149" height="252" alt="Переводные татуировки Маки" />
+          </a>
+          <div class="catalog-item-wrapping">
+            <div>
+              <h3>
+                <a href="catalog-item.html">Leaves</a>
+              </h3>
+              <p>390 руб</p>
+            </div>
+            <p>
+              <a class="button" href="#">В корзину</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <a href="catalog-item.html">
+            <img src="img/package_2.jpg" width="149" height="252" alt="Переводные татуировки Тюльпаны" />
+          </a>
+          <div class="catalog-item-wrapping">
+            <div>
+              <h3>
+                <a href="catalog-item.html">Leaves</a>
+              </h3>
+              <p>390 руб</p>
+            </div>
+            <p>
+              <a class="button" href="#">В корзину</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <a href="catalog-item.html">
+            <img src="img/package_3.jpg" width="149" height="252" alt="Переводные татуировки Орхидеи" />
+          </a>
+          <div class="catalog-item-wrapping">
+            <div>
+              <h3>
+                <a href="catalog-item.html">Leaves</a>
+              </h3>
+              <p>390 руб</p>
+            </div>
+            <p>
+              <a class="button" href="#">В корзину</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <a href="catalog-item.html">
+            <img src="img/package_4.jpg" width="149" height="252" alt="Переводные татуировки Лютики" />
+          </a>
+          <div class="catalog-item-wrapping">
+            <div>
+              <h3>
+                <a href="catalog-item.html">Leaves</a>
+              </h3>
+              <p>390 руб</p>
+            </div>
+            <p>
+              <a class="button" href="#">В корзину</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <a href="catalog-item.html">
+            <img src="img/package_5.jpg" width="149" height="252" alt="Переводные татуировки Пионы" />
+          </a>
+          <div class="catalog-item-wrapping">
+            <div>
+              <h3>
+                <a href="catalog-item.html">Leaves</a>
+              </h3>
+              <p>390 руб</p>
+            </div>
+            <p>
+              <a class="button" href="#">В корзину</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <a href="catalog-item.html">
+            <img src="img/package_6.jpg" width="149" height="252" alt="Переводные татуировки Папоротник" />
+          </a>
+          <div class="catalog-item-wrapping">
+            <div>
+              <h3>
+                <a href="catalog-item.html">Leaves</a>
+              </h3>
+              <p>390 руб</p>
+            </div>
+            <p>
+              <a class="button" href="#">В корзину</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <a href="catalog-item.html">
+            <img src="img/package_7.jpg" width="149" height="252" alt="Переводные татуировки Цветы" />
+          </a>
+          <div class="catalog-item-wrapping">
+            <div>
+              <h3>
+                <a href="catalog-item.html">Leaves</a>
+              </h3>
+              <p>390 руб</p>
+            </div>
+            <p>
+              <a class="button" href="#">В корзину</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <a href="catalog-item.html">
+            <img src="img/package_8.jpg" width="149" height="252" alt="Переводные татуировки Перья" />
+          </a>
+          <div class="catalog-item-wrapping">
+            <div>
+              <h3>
+                <a href="catalog-item.html">Leaves</a>
+              </h3>
+              <p>390 руб</p>
+            </div>
+            <p>
+              <a class="button" href="#">В корзину</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <a href="catalog-item.html">
+            <img src="img/package_9.jpg" width="149" height="252" alt="Переводные татуировки Колибри" />
+          </a>
+          <div class="catalog-item-wrapping">
+            <div>
+              <h3>
+                <a href="catalog-item.html">Leaves</a>
+              </h3>
+              <p>390 руб</p>
+            </div>
+            <p>
+              <a class="button" href="#">В корзину</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="lower-navigation">
+        <ul class="paginator-list">
+          <li class="paginator-item paginator-item-current"><a href="#"><b>1</b></a></li>
+          <li class="paginator-item"><a href="#">2</a></li>
+          <li class="paginator-item"><a href="#">...</a></li>
+          <li class="paginator-item"><a href="#">5</a></li>
+        </ul>
+
+        <button class="button show-more">Ещё!</button>
+        <button class="button below">Дальше</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p class="footer-contacts">
+        +7 800 600 42 14<br />
+        rainbow@tattoo.com
+      </p>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg width="35px" height="35px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="tattoo-index" transform="translate(-669.000000, -4007.000000)" fill-rule="nonzero">
+                    <g id="Подвал" transform="translate(0.000000, 3091.000000)">
+                      <g id="instagram" transform="translate(669.000000, 916.000000)">
+                        <path
+                          d="M34.141193,0 L5.85992982,0 C2.62511896,0.00371248745 0.00371248745,2.62511896 0,5.85992982 L0,34.141193 C0.00371363995,37.3758216 2.62530059,39.9969062 5.85992982,40 L34.141193,40 C37.3753837,39.9962875 39.9962875,37.3753837 40,34.141193 L40,5.85992982 C39.9969062,2.62530059 37.3758216,0.00371363995 34.141193,0 Z"
+                          id="Path" fill="#FFFFFF"></path>
+                        <path
+                          d="M32.6315789,4.21052632 C30.8875218,4.21052632 29.4736842,5.62436395 29.4736842,7.36842105 C29.4736842,9.11247816 30.8875218,10.5263158 32.6315789,10.5263158 C34.3756361,10.5263158 35.7894737,9.11247816 35.7894737,7.36842105 C35.7887905,5.624647 34.375353,4.21120948 32.6315789,4.21052632 Z"
+                          id="Path" fill="#000000"></path>
+                        <path
+                          d="M20,10.5263158 C14.7678287,10.5263158 10.5263158,14.7678287 10.5263158,20 C10.5263158,25.2321713 14.7678287,29.4736842 20,29.4736842 C25.2321713,29.4736842 29.4736842,25.2321713 29.4736842,20 C29.4682486,14.7700818 25.2299182,10.5317514 20,10.5263158 Z"
+                          id="Path" fill="#000000"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Тикток</span>
+              <svg width="35px" height="35px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="tattoo-index" transform="translate(-614.000000, -4007.000000)" fill="#FFFFFF"
+                    fill-rule="nonzero">
+                    <g id="Подвал" transform="translate(0.000000, 3091.000000)">
+                      <g id="tiktok" transform="translate(614.000000, 916.000000)">
+                        <path
+                          d="M24.8979592,8.83928571 L24.8979592,7.14285714 L21.6326531,7.14285714 L21.6326531,25.8035714 C21.6326531,28.6143063 19.439762,30.8928571 16.7346939,30.8928571 C14.0296257,30.8928571 11.8367347,28.6143063 11.8367347,25.8035714 C11.8367347,22.9928365 14.0296257,20.7142857 16.7346939,20.7142857 L18.3673469,20.7142857 L18.3673469,17.3214286 L16.7346939,17.3214286 C12.2262469,17.3214286 8.57142857,21.1190133 8.57142857,25.8035714 C8.57142857,30.4881296 12.2262469,34.2857143 16.7346939,34.2857143 C21.2431408,34.2857143 24.8979592,30.4881296 24.8979592,25.8035714 L24.8979592,15.609096 C26.3072782,16.7194693 28.0272608,17.3207773 29.7959184,17.3214286 L31.4285714,17.3214286 L31.4285714,13.9285714 L29.7959184,13.9285714 C27.0920159,13.9256494 24.9007714,11.6488094 24.8979592,8.83928571 Z"
+                          id="Path"></path>
+                        <path
+                          d="M0,40 L40,40 L40,0 L0,0 L0,40 Z M3.33333333,3.33333333 L36.6666667,3.33333333 L36.6666667,36.6666667 L3.33333333,36.6666667 L3.33333333,3.33333333 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyrighted">
+        <img src="icons/Copyrighted.svg" width="12" height="14" alt="Защищено авторским правом" />
+        <p>2020 RainbowTattoo</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <section class="modal modal-login">
+    <h2 class="visually-hidden">Личный кабинет</h2>
+    <form class="login-form" action="" method="POST">
+      <p>
+        <lable class="visually-hidden" for="user-email">Почта</lable>
+        <input id="user-email" type="text" name="email" value="" placeholder="E-mail" />
+      </p>
+      <p>
+        <lable class="visually-hidden" for="user-password">Пароль</lable>
+        <input id="user-password" type="text" name="password" value="" placeholder="Пароль" />
+      </p>
+      <button class="button disabled" type="submit">Войти</button>
+    </form>
+    <p class="login-help">
+      <a class="registration" href="#">Зарегистрироваться</a>
+      <a class="restore" href="#">Забыли пароль?</a>
+    </p>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
+  <script src="login.js"></script>
+</body>
+
+</html>
